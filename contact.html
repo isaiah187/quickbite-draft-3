@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickBites Campus - Contact</title>
+  <link href="styles.css" rel="stylesheet">
+  <meta name="description" content="Contact QuickBites Campus for orders and partnerships.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">QuickBites<span class="accent">Campus</span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact & Order</h1>
+    <p>Please use this form to submit orders or general enquiries. Replace this with a server-side form later if needed.</p>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+      <label for="studentid">Student ID</label>
+      <input id="studentid" name="studentid" type="text" required>
+      <label for="building">Building / Room</label>
+      <input id="building" name="building" type="text" required>
+      <label for="message">Order Details</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button class="btn cta" type="submit">Submit Order</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© QuickBites Campus · Built for students</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
